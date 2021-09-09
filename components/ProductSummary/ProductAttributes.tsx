@@ -17,13 +17,17 @@ const ProductAttributes = ({
           <Table.HeaderCell colSpan="2">Attributes</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
-
       <Table.Body>
         {Object.keys(otherAttributes).map((key) => (
           <Table.Row key={key}>
             <Table.Cell className="attr-name">{key}</Table.Cell>
             <Table.Cell>
-              {otherAttributes[key as keyof typeof otherAttributes]}
+              {
+                otherAttributes[key as keyof typeof otherAttributes]
+
+                //  console.log('key-->',key)+
+                //  console.log('oter-->',otherAttributes[key as keyof typeof otherAttributes])
+              }
             </Table.Cell>
           </Table.Row>
         ))}

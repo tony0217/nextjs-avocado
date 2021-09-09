@@ -25,6 +25,7 @@ const Footer = () => (
               </List.Item>
             </List>
           </Grid.Column>
+
           <Grid.Column width={5}>
             <Header as="h4" content="Servicios" />
             <List>
@@ -35,6 +36,7 @@ const Footer = () => (
               </List.Item>
             </List>
           </Grid.Column>
+
           <Grid.Column width={7}>
             <Header as="h4">Hecho para</Header>
             <p>
